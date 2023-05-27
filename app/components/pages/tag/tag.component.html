@@ -1,0 +1,6 @@
+<div class="flex">
+    <div class="style" *ngIf="tags">
+        <a href=""  routerLinkActive="route" *ngFor="let tag of tags" routerLink="/tags/{{tag.name}}">{{tag.name}}
+        <span  class="badge rounded-pill  bg-light" style="color:black ;"> {{tag.count}}</span> </a>
+    </div>
+</div>

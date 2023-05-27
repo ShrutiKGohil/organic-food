@@ -1,0 +1,33 @@
+<div class="container">
+<ul>
+    <li *ngFor="let cartitem of cart.items">
+       <div class="img"> <img [src]="cartitem.food.imageUrl" alt=""></div>
+       <a href="" routerLink="/food/{{cartitem.food.id}}">{{cartitem.food.name}}</a>
+       <div>
+        
+  <input type="number" #amt  [(ngModel)]="cartitem.quantity" (change)="change(cartitem,amt.value)" id="quantity" name="quantity" min="1" max="100">
+       </div>
+        <div>
+            {{cartitem.Price}}
+        </div>
+       <div>
+        
+        <button class="dust" (click)="remove(cartitem)">🗑</button>
+       </div>
+    </li>
+
+</ul>
+
+<div class="checkout">
+    <div class="count">
+         {{cart.total}}
+    </div>
+
+    <div class="total">
+        {{cart.totalPrice}}
+    </div>
+    <div class="but">
+        <a routerLink="/home" class="btn btn-success">Shop more</a>
+    </div>
+</div>
+</div>

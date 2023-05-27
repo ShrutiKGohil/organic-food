@@ -1,0 +1,29 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.text{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a:hover{
+    opacity: 0.8;
+}
+.flex-item{
+    margin: 30px;
+}
+
+p{
+    padding-top: -8px;
+}

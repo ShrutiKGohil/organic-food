@@ -1,0 +1,31 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+.list-item{
+    padding: 16px;
+    font-size: 1.8rem;
+    display: block;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: rgb(114, 131, 114);
+}

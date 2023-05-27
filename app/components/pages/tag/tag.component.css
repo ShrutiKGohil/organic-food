@@ -1,0 +1,27 @@
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+}
+a:hover{
+    background-color: rgb(50, 47, 47);
+}
+
+.route{
+    background-color: rgb(29, 27, 27);
+
+}
+.style{
+    background-color:gray;
+    /* width: 600px; */
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.flex{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}

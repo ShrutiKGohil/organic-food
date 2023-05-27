@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.flex input{
+    border-radius: 12rem 0 0 12rem;
+    padding: 10px;
+    background-color: #E2E5DE;
+    border: none;
+    outline: none;
+    height: 3rem;
+}
+
+
+
+.flex button{
+    border-radius: 0 12rem 12rem 0;
+    /* padding: 14px; */
+    /* padding: 18px; */
+    font-size: 22px;
+    height: 3rem;
+    outline: none;
+    background-color: #E2E5DE;
+
+}

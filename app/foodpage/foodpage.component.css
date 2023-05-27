@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+
+    margin-left: 100px;    
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.container{
+    display: inline;
+    margin-left: 100px;
+    width: 700px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border: 5px;
+    border-color: black;
+    margin-left: 19rem;
+    /* height: 400px;
+    width: 350px; */
+
+}
+
+.items{
+    margin: 8px 0px;
+    font-size: 2rem;
+}
+
+.btn{
+    height: 34px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+    /* For mobile phones: */
+    img{
+        margin-left: 0;
+    }
+
+    .details{
+        margin-left: 2rem;
+    }
+
+    .items{
+        
+        font-size: 1.5rem;
+    }
+  }

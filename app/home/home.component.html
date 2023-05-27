@@ -1,0 +1,31 @@
+<div class="bg">
+
+
+<app-search (searchtextChange)="onsearchText($event)" > </app-search>
+<br>
+<app-tag></app-tag>
+<div class="flex">
+  <ng-container *ngFor="let food of foods" >
+    <div class="card flex-item"  *ngIf="searchtext=== ' ' || food.name.toLowerCase().includes(searchtext) " style="width:360px" >
+      <a routerLink="/food/{{food.id}}"> <img class="card-img-top img-fluid" src="{{food.imageUrl}}" alt="Card image" style="width:100% ;height:200px"></a>
+       <div class="card-body">
+
+           <p *ngIf="food.fav"  style="float: right; color: red; font-size: 24px; ">&hearts;</p>
+           <p *ngIf="!food.fav"  style="float: right; color: black; font-size: 24px; ">&hearts;</p>
+         <h4 ><a routerLink="/food/{{food.id}}">{{food.name}}</a></h4>
+         <p class="card-text">
+         <star-rating [value]="food.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="true" ></star-rating>
+        {{food.price}}&#8360; per Kg</p>
+         
+       </div>
+       <div class="card-footer">
+           <a  class="btn btn-danger" routerLink="/food/{{food.id}}" style="float: right;">View</a>
+       </div>
+     </div>
+  </ng-container>
+    
+  <!-- <div *ngIf="i===0" class="text">
+    <h3>Item not found</h3>
+  </div> -->
+ </div>
+</div>
